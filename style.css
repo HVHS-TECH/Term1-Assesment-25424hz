@@ -2,17 +2,17 @@ body {
     background-color: antiquewhite;
 
     nav {
+        display: grid;
+        grid-template-columns: 1fr 5fr 5fr 5fr;
         padding: 12px 2%;
         background-color: cornsilk;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-around;
-
+        text-align: center;
     }
 
     nav a {
         margin-left:20px;
         padding: 15px;
+        background-color: rgb(255, 244, 202);
         border: 1px solid rgb(150, 150, 150);
         border-radius: 100px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -115,5 +115,39 @@ body {
     .round img{
         max-height: 120%;
         max-width: 120%;
+    }
+
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 15px;
+    }
+    .footer div{
+        color: white;
+        font-size: 26px;
+        padding:15px 50px;
+        background-color: rgb(250, 139, 60);
+    }
+    .footer p {
+        margin: 4px;
+    }
+    .LF {
+        float: left;
+    }
+    .LF img {
+        max-width:4%;
+        margin-right: 20px;
+    }
+    .RF {
+        float: right;
+        text-align: right;
+    }
+    .RF img {
+        max-width: 10%;
+        margin: 10px;
+        transition: transform 0.2s; 
+    }
+    .RF img:hover {
+        transform: scale(1.1);
     }
 }
