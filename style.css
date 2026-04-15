@@ -1,5 +1,6 @@
 body {
     background-color: antiquewhite;
+    font-family:'Times New Roman', Times, serif;
 
     nav {
         display: grid;
@@ -11,7 +12,7 @@ body {
 
     nav a {
         margin-left:20px;
-        padding: 15px;
+        padding: 10px;
         background-color: rgb(255, 244, 202);
         border: 1px solid rgb(150, 150, 150);
         border-radius: 100px;
@@ -40,29 +41,37 @@ body {
 
     .main {
         display: grid;
-        grid-template-columns: 4fr 2fr 1fr 2fr ;
+        grid-template-columns: 8fr 3fr 2fr 4fr ;
         grid-template-rows: repeat(3,300px);
-        gap: 10px;
         margin-top: 15px;
         background-color: rgba(250, 232, 169, 0.5);
     }
 
     .main div {
-        font-size: 36px;
+        font-size: 35px;
         text-align: left;
-        padding: 20px;
+        padding: 15px;
         display:flex;
-        align-items: center;
+        align-items:first baseline;
         justify-content: center;
-    }
-    .main div img {
-        align-self: center;
     }
 
     .paragraph {
         grid-column:1;
         grid-row:1 / span 3;
         margin-left: 20px;
+        margin-top: 30px;
+    }
+    .paragraph p{
+        margin: 25px;
+        line-height: 1.6;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    .paragraph img {
+        max-width: 15%;
+        float: left;
+        margin-right: 10px;
     }
     
     .image1 {
@@ -70,8 +79,8 @@ body {
         transition: transform 0.3s;
     }
     .image1 img{
-        max-width:80%;
-        max-height: 80%;
+        max-width:90%;
+        max-height: auto;
     }
     .image1:hover{
         transform:scale(1.1);
@@ -82,30 +91,34 @@ body {
     }
     .image2 img{
         max-width:80%;
-        max-height: 80%;
+        max-height: auto;
+        position: relative;
+        top: 20px;
     }
     .image2:hover{
-        transform:scale(1.1);
+        transform: scale(1.08);
     }
     .image3 {
         grid-column:2;
         transition: transform 0.3s;
     }
     .image3:hover{
-        transform:scale(1.1);
+        transform:scale(1.11);
     }
     .image3 img{
         border-radius:10px;
         max-width: 100%;
-        max-height: 100%;
+        max-height: auto;
     }
     .column3 {
         grid-column:3;
         grid-row: 1 / span 3;
+        position: relative;
+        top: 30px;
     }
     .column3 img{
-        max-height: 160%;
-        max-width:120%;
+        max-height: 140%;
+        max-width:100%;
     }
     .round {
         grid-row: 1 / span 3;
@@ -113,8 +126,8 @@ body {
         align-self:center;
     }
     .round img{
-        max-height: 120%;
-        max-width: 120%;
+        max-height: 100%;
+        max-width: 100%;
     }
 
     .footer {
@@ -130,9 +143,6 @@ body {
     }
     .footer p {
         margin: 4px;
-    }
-    .LF {
-        float: left;
     }
     .LF img {
         max-width:4%;
