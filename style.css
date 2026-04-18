@@ -18,6 +18,15 @@ body {
         border-radius: 100px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
+    #logo {
+        background-color: unset;
+        border: unset;
+        border-radius: unset;
+        box-shadow: unset;
+        margin-left: unset;
+        padding: unset;
+
+    }
 
     #Headpicture {
         position: relative;
@@ -39,21 +48,18 @@ body {
         padding: 5px;
     }
 
-    .main {
+    main {
         display: grid;
         grid-template-columns: 8fr 3fr 2fr 4fr ;
-        grid-template-rows: repeat(3,300px);
+        grid-template-rows: repeat(3,auto);
         margin-top: 15px;
         background-color: rgba(250, 232, 169, 0.5);
     }
 
-    .main div {
+    main div {
         font-size: 35px;
         text-align: left;
         padding: 15px;
-        display:flex;
-        align-items:first baseline;
-        justify-content: center;
     }
 
     .paragraph {
@@ -130,18 +136,18 @@ body {
         max-width: 100%;
     }
 
-    .footer {
+    footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         margin-top: 15px;
     }
-    .footer div{
+    footer div{
         color: white;
         font-size: 26px;
         padding:15px 50px;
         background-color: rgb(250, 139, 60);
     }
-    .footer p {
+    footer p {
         margin: 4px;
     }
     .LF img {
@@ -159,5 +165,26 @@ body {
     }
     .RF img:hover {
         transform: scale(1.1);
+    }
+
+    .H {
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: 1fr 3fr;
+        padding:10px;
+        gap: 15px;
+        align-items: center;
+    }
+    .H div{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        padding: 15px;
+    }
+    .H img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10%;
+        border: 5px solid rgb(100, 100, 100);
     }
 }
