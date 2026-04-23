@@ -15,7 +15,7 @@ nav {
 }
 
 nav a {
-    margin-left: 20px;
+    margin: 1px 20px;
     padding: 10px;
     background-color: rgb(255, 244, 202);
     border: 1px solid rgb(150, 150, 150);
@@ -26,6 +26,7 @@ nav a {
     color: rgb(187, 86, 13);
     transition: transform 0.3s, background-color 0.5s, color 0.5s;
     font-family: 'Racing Sans One';
+
 }
 
 nav a:hover {
@@ -34,9 +35,7 @@ nav a:hover {
     color: white;
 }
 
-#history,
-#recipe,
-#method {
+.active {
     background-color: rgb(250, 139, 60);
     color: white;
 }
@@ -223,7 +222,7 @@ footer div {
     color: rgb(241, 255, 253);
     font-size: 24px;
     padding: 15px 50px;
-    background-color: rgb(250, 139, 60);
+    background-color: rgb(249, 161, 98);
 }
 
 footer p {
@@ -262,6 +261,7 @@ footer p {
 
 
 
+
 .H {
     display: grid;
     grid-template-rows: repeat(5, auto);
@@ -287,6 +287,8 @@ footer p {
     border-bottom:2px dotted #56432f;
     grid-column: 1 / span 2;
 }
+
+
 
 .R {
     display: flex;
@@ -338,6 +340,8 @@ footer p {
     margin-bottom: 0;
 }
 
+
+
 .M {
     display: grid;
     grid-template-columns: 3fr 2fr;
@@ -354,9 +358,6 @@ footer p {
     max-width: 80%;
     border-radius: 20px;
     justify-self: center;
-}
-#fried {
-    grid-row: 1 / span 2;
 }
 #FINISH {
     grid-column: 1 / span 2;
